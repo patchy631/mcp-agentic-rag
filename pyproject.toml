@@ -1,0 +1,15 @@
+[project]
+name = "mcp-agentic-rag"
+version = "0.1.0"
+description = "A Machine Conversation Protocol (MCP) implementation with RAG capabilities using LlamaIndex and Linkup"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "linkup-sdk>=0.2.4",
+    "llama-index>=0.12.25",
+    "llama-index-embeddings-huggingface>=0.5.2",
+    "llama-index-llms-ollama>=0.5.3",
+    "mcp[cli]>=1.5.0",
+    "python-dotenv>=1.0.0",
+]
