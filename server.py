@@ -11,11 +11,16 @@ client = LinkupClient()
 rag_workflow = RAGWorkflow()
 
 @mcp.tool()
-def web_search(query: str) -> str:
-    """Search the web for the given query."""
+def web_search(query: str, depth: str = "standard") -> str:
+    """Search the web for the given query.
+    
+    Args:
+        query: The search query string
+        depth: The search depth, either "standard" or "deep"
+    """
     search_response = client.search(
         query=query,
-        depth="standard",  # "standard" or "deep"
+        depth=depth,  # User can now specify "standard" or "deep"
         output_type="sourcedAnswer",  # "searchResults" or "sourcedAnswer" or "structured"
         structured_output_schema=None,  # must be filled if output_type is "structured"
     )
@@ -30,13 +35,3 @@ async def rag(query: str) -> str:
 if __name__ == "__main__":
     asyncio.run(rag_workflow.ingest_documents("data"))
     mcp.run(transport="stdio")
-
-
-
-
-
-
-
-
-
-
