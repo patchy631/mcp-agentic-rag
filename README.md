@@ -1,6 +1,6 @@
 # MCP Agentic RAG
 
-![MCP Agentic RAG](assets/thumbnail.png)
+[![MCP Agentic RAG](https://github.com/patchy631/ai-engineering-hub/blob/main/cursor_linkup_mcp/assets/thumbnail.png)](https://youtu.be/XMVzT8X0QTA)
 
 A Machine Conversation Protocol (MCP) implementation that provides RAG (Retrieval Augmented Generation) capabilities using LlamaIndex and Linkup integration.
 
@@ -9,8 +9,6 @@ A Machine Conversation Protocol (MCP) implementation that provides RAG (Retrieva
 This project demonstrates how to build an MCP server that exposes two main tools:
 1. **Web Search**: Uses Linkup to search the web and return results
 2. **RAG**: A retrieval-augmented generation system that answers questions based on documents in a local data directory
-
-📺 **[Watch the demo video on YouTube](https://www.youtube.com/watch?v=XMVzT8X0QTA&t=11s)** to see the project in action!
 
 ## Requirements
 
